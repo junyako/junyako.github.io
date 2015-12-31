@@ -558,4 +558,17 @@ footer p {
 		color: #fff;
 	}
 
+	#information .information01 h3 {
+		font-size: 12px;
+		font-weight: normal;
+		text-align: center;
+	}
+
+	#information .information01 p {
+		padding-top: 8px;
+		font-size: 12px;
+		line-height: 1.8;
+		text-align: center;
+	}
+
 }
