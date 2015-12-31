@@ -1,24 +1,26 @@
 @charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Roboto);
 
 /*初期設定ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/
 body{
 	color: #000;
-	font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+	font-family: "Roboto","ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
 	font-size: 62.5%;
 	line-height: 1.5;
 	letter-spacing: 0.1em;
 	overflow-x: hidden;
 	box-sizing: border-box;
 }
+
 img{
 	border:none;
 	vertical-align:bottom;
 }
+
 a{
 	text-decoration: none;
 	color: #000;
 	transition: color 0.3s ease 0s;
-	-webkit-transition: color 0.3s ease 0s;
 }
 
 a:hover {
@@ -29,35 +31,40 @@ ul{
 	list-style-type:none;
 }
 
+.mb10 {
+	margin-bottom: 10px;
+}
 
+.mb30 {
+	margin-bottom: 30px;
+}
 .mb40 {
 	margin-bottom: 40px;
 }
-
 .mb60 {
 	margin-bottom: 60px;
 }
-
 .mb110 {
 	margin-bottom: 110px;
 }
 
-
 /*共通コンテンツーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/
 
 #contents {
-	float: left;
 	width: 100%;
 	line-height: 2.4em;
 	letter-spacing: 0.15em;
-	margin-top: 70px;
+
 }
-#contents #pagetitle {
-	font-size: 24px;
-	float: left;
+
+.works01 .img{
 	width: 100%;
-	margin-bottom: 30px;
-	padding-bottom: 10px;
+	overflow: hidden;
+	position: relative;
+	margin-bottom: 8px;
+}
+.works01 .img img {
+	width: 100%;
 	position: relative;
 	z-index: 0;
 }
@@ -68,16 +75,92 @@ ul{
 	position: relative;
 }
 
-#contents .pagenavi02 .back {
-	background-color: #FFF;
-	padding: 10px 16px 10px 16px;
-	color: #000;
-	border-bottom: solid #000 1px;
-}
-
-.pagenavi02 {
+.pageback {
 	text-align: center;
 }
+
+.pageback a:link,a:visited {
+	background-color: #fff;
+	border: 1px solid #333;
+	padding: 10px 50px 10px 50px;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-o-transition: 0.5s;
+	-ms-transition: 0.5s;
+	transition: 0.5s;
+	color: #333;
+}
+
+.pageback a:hover {
+	background-color: #333;
+	color: #fff;
+}
+
+
+
+#video {
+	width: 100%;
+}
+.video_container {
+	position: relative;
+	width: 100%;
+	height: 0;
+	padding-top: 56.25%;
+	overflow: hidden;
+	margin-bottom: 40px;
+}
+iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/*問い合わせ先ーーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/
+
+#information {
+	float: left;
+	width: 100%;
+	margin-bottom: 30px;
+	position: relative;
+	padding-top: 30px;
+	padding-bottom: 20px;
+	border-top: 1px #333 dotted;
+	border-bottom: 1px #333 dotted;
+}
+
+#information .information01 {
+	float: left;
+	width: 100%;
+	margin-bottom: 8px;
+}
+
+#information .information01 h3 {
+	font-size: 16px;
+	font-weight: normal;
+	text-align: center;
+}
+
+#information .information01 p {
+	padding-top: 8px;
+	font-size: 14px;
+	line-height: 1.8;
+	text-align: center;
+}
+
+footer {
+	float: left;
+	width: 100%;
+	margin-bottom: 20px;
+	position: relative;
+	padding-top: 20px;
+	font-size: 10px;
+}
+footer p {
+	text-align: center;
+}
+
 
 /*幅1001px以上ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/
 @media screen and (min-width: 1001px) {
@@ -90,97 +173,109 @@ ul{
 		z-index: 0;
 	}
 	header {
-	width: 100%;
-	position: relative;
-	z-index: 2;
-	height: 100px;
+		width: 100%;
+		z-index: 2;
+		height: 100px;
 	}
 	header h1 {
-	height: 100px;
-	width: 340px;
-	position: absolute;
-	left: -12px;
-	top: 50%;
-	margin-top: -36px;
-	padding-right: 12px;
-	padding-left: 12px;
-	overflow: hidden;
-	font-size: 30px;
+		overflow: hidden;
+		font-size: 30px;
+		text-align: center;
+		padding-top: 30px;
 	}
 	/*topページコンテンツーーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/
+	#contents {
+		margin-top: 60px;
+	}
+
+	#contents #pagetitle {
+		font-size: 20px;
+		text-align: center;
+		width: 100%;
+		margin-bottom: 30px;
+		position: relative;
+
+	}
+
 	.works01 {
-		float: left;
 		width: 100%;
 		margin-bottom: 70px;
 	}
 
-	.works01 .img{
-		float: left;
-		width: 100%;
-		overflow: hidden;
-		position: relative;
-		margin-bottom: 8px;
-	}
-	.works01 .img img {
-		float: left;
-		width: 100%;
-		position: relative;
-		z-index: 0;
-	}
+
 	.works01 h2 {
-		padding-top: 12px;
-		padding-bottom: 4px;
-		font-size: 18px;
+		font-size: 16px;
 		width: 100%;
 		font-weight: normal;
-		float: left;
+		text-align: center;
 	}
 
 	.works01 p {
-		font-size: 12px;
+		font-size: 10px;
 		width: 100%;
-		line-height: 1.6em;
-		float: left;
+		line-height: 0.8em;
+		text-align: center;
 	}
-
+	/*worksページ----------------------------------*/
 	.works_main {
 		width: 100%;
-		margin-bottom: 60px;
+		margin-bottom: 30px;
 		float: left;
 	}
+	.works_main .box01 {
+		margin-bottom: 30px;
+	}
+
 	.works_main h1 {
-		font-size: 20px;
+		font-size: 16px;
 		float: left;
 		width: 100%;
 		font-weight: normal;
+		text-align: center;
 	}
-	.works_main .tag  {
-		width: 100%;
-		margin-bottom: 20px;
-		font-size: 12px;
-		float: left;
-	}
+
 	.works_main .text {
 		width: 65%;
 		float: left;
 	}
 
-	/*worksページ担当ーーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/
+	.works_main .text a {
+		color: #333;
+    	-webkit-transition: 0.5s;
+    	-moz-transition: 0.5s;
+    	-o-transition: 0.5s;
+    	-ms-transition: 0.5s;
+    	transition: 0.5s;
+		border-bottom: 1px dotted #333;
+	}
+
+	.works_main .text a:hover {
+		color: #999;
+	}
+
 	.works_main .outline {
 		width: 30%;
-		float: right;
-		font-size: 12px;
+		float: left;
+		padding-top: 10px;
 	}
 	.works_main .outline dt {
 		width: 100%;
-		font-size: 12px;
+		font-size: 14px;
 		float: left;
 	}
 	.works_main .outline dd {
 		width: 100%;
 		float: left;
+		font-size: 13px;
 		margin-bottom: 15px;
 	}
+
+	#contents p {
+		margin-top: 10px;
+		font-size: 14px;
+		text-align: center;
+	}
+
 }
 
 
@@ -196,26 +291,109 @@ ul{
 	}
 	header {
 		width: 100%;
-		position: relative;
 		z-index: 2;
-		height: 120px;
+		height: 100px;
 	}
 	header h1 {
-		height: 100px;
-		width: 300px;
-		position: absolute;
-		left: -9px;
-		top: 50%;
-		margin-top: -25px;
+		margin-top: 30px;
 		overflow: hidden;
-		font-size: 24px;
+		font-size: 22px;
+		text-align: center;
 	}
 
-	#information .info_wrap {
-		width: 100%!important;
+	#contents {
+		margin-top: 10px;
 	}
-	#information .information01  {
-		width: 100%!important;
+
+	#contents #pagetitle {
+		font-size: 20px;
+		text-align: center;
+		width: 100%;
+		margin-bottom: 20px;
+		position: relative;
+
+	}
+
+	.works01 {
+		width: 100%;
+		margin-bottom: 50px;
+	}
+
+
+	.works01 h2 {
+		font-size: 16px;
+		width: 100%;
+		font-weight: normal;
+		text-align: center;
+	}
+
+	.works01 p {
+		font-size: 10px;
+		width: 100%;
+		line-height: 0.8em;
+		text-align: center;
+	}
+	/*worksページ----------------------------------*/
+	.works_main {
+		width: 100%;
+		margin-bottom: 20px;
+		float: left;
+	}
+
+	.works_main .box01 {
+		margin-bottom: 20px;
+	}
+
+	.works_main h1 {
+		font-size: 14px;
+		float: left;
+		width: 100%;
+		font-weight: normal;
+		text-align: center;
+	}
+
+	.works_main .text {
+		width: 65%;
+		float: left;
+	}
+
+	.works_main .text a {
+		color: #333;
+		-webkit-transition: 0.5s;
+		-moz-transition: 0.5s;
+		-o-transition: 0.5s;
+		-ms-transition: 0.5s;
+		transition: 0.5s;
+		border-bottom: 1px dotted #333;
+	}
+
+	.works_main .text a:hover {
+		color: #999;
+	}
+
+	.works_main .outline {
+		width: 30%;
+		float: left;
+		font-size: 12px;
+		margin-top: 10px;
+		padding-left: 30px;
+	}
+	.works_main .outline dt {
+		width: 100%;
+		font-size: 12px;
+		float: left;
+	}
+	.works_main .outline dd {
+		width: 100%;
+
+		font-size: 11px;
+		margin-bottom: 15px;
+	}
+
+	#contents p {
+		margin-top: 10px;
+		font-size: 12px;
+		text-align: center;
 	}
 
 
@@ -224,21 +402,36 @@ ul{
 /*800px以下ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/
 @media screen and (max-width: 800px) {
 	/*topページコンテンツーーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/
+	#wrapper {
+		width: 90%;
+		position: relative;
+		background-color: #FFF;
+		margin-right: auto;
+		margin-left: auto;
+		z-index: 0;
+	}
+
+	#contents #pagetitle {
+		font-size: 16px;
+		text-align: center;
+		width: 100%;
+		margin-bottom: 10px;
+		position: relative;
+
+	}
 	.works01 {
 		float: left;
 		width: 100%;
-		margin-bottom: 60px;
+		margin-bottom: 30px;
 		letter-spacing: 0.17em;
 	}
-	.works01:hover {
-		color: #000;
-	}
+
 	.works01 .img{
 		float: left;
 		width: 100%;
 		overflow: hidden;
 		position: relative;
-		margin-bottom: 8px;
+		margin-bottom: 4px;
 	}
 	.works01 .img img {
 		float: left;
@@ -250,115 +443,64 @@ ul{
 		font-size: 14px;
 		width: 100%;
 		font-weight: normal;
-		float: left;
+		text-align: center;
+		margin-bottom: -4px;
 	}
 
 	.works01 p {
-		font-size: 10px;
+		font-size: 9px;
 		width: 100%;
-		line-height: 1.6em;
-		float: left;
+		line-height: 0.8em;
+		text-align: center;
+	}
+
+	.works_main .box01 {
+		margin-bottom: 10px;
 	}
 
 	.works_main .text {
-	width: 100%;
-	float: left;
-	margin-bottom: 30px;
-	padding-bottom: 30px;
-	border-bottom: 1px solid #EDEDED;
-	padding-right: 0px;
-	border-right-style: none;
+		width: 100%;
+		margin-bottom: 10px;
+		padding-bottom: 20px;
+		border-bottom: 1px dotted #333;
+		padding-right: 0px;
+		border-right-style: none;
 	}
+
 	.works_main .outline {
 		width: 100%;
-		float: left;
+		float: right;
+		text-align: center;
 	}
+
 	.works_main {
 		width: 100%;
-		margin-bottom: 60px;
+		margin-bottom: 20px;
 		float: left;
 	}
-	.works_main h1 {
-		font-size: 20px;
-		float: left;
-		width: 100%;
-		font-weight: normal;
-	}
+
 	.works_main .tag  {
 		width: 100%;
 		margin-bottom: 20px;
 		font-size: 12px;
 		float: left;
 	}
-	.works_main .text {
-		width: 65%;
-		float: left;
-	}
 
-	/*worksページ担当ーーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/
-	.works_main .outline {
-		width: 30%;
-		float: right;
-		font-size: 12px;
-	}
 	.works_main .outline dt {
 		width: 100%;
 		font-size: 12px;
-		float: left;
 	}
 	.works_main .outline dd {
 		width: 100%;
-		float: left;
-		margin-bottom: 15px;
+		margin-bottom: 10px;
 	}
-}
+
+	#contents p {
+		margin-top: 10px;
+		font-size: 10px;
+		line-height: 18px;
+		text-align: center;
+	}
 
 
-
-/*問い合わせ先ーーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/
-
-#information {
-	float: left;
-	width: 100%;
-	margin-bottom: 40px;
-	position: relative;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	border-top: 1px #333 dotted;
-	border-bottom: 1px #333 dotted;
-}
-
-#information .info_wrap {
-	float: left;
-	width: 620px;
-}
-
-#information .information01 {
-	float: left;
-	width: 100%;
-	margin-bottom: 8px;
-}
-
-#information .information01 h3 {
-	font-size: 16px;
-	font-weight: normal;
-}
-
-#information .information01 p {
-	padding-top: 8px;
-	font-size: 14px;
-	line-height: 1.8;
-}
-
-/*worksページ担当ーーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/
-footer {
-	float: left;
-	width: 100%;
-	margin-bottom: 20px;
-	position: relative;
-	padding-top: 20px;
-	font-size: 10px;
-}
-footer p {
-	text-align: center;
 }
