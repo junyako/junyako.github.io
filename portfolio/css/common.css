@@ -75,27 +75,6 @@ ul{
 	position: relative;
 }
 
-.pageback {
-	text-align: center;
-}
-
-.pageback a:link,a:visited {
-	background-color: #fff;
-	border: 1px solid #333;
-	padding: 10px 50px 10px 50px;
-	-webkit-transition: 0.5s;
-	-moz-transition: 0.5s;
-	-o-transition: 0.5s;
-	-ms-transition: 0.5s;
-	transition: 0.5s;
-	color: #333;
-}
-
-.pageback a:hover {
-	background-color: #333;
-	color: #fff;
-}
-
 
 
 #video {
@@ -162,6 +141,7 @@ footer p {
 }
 
 
+
 /*幅1001px以上ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/
 @media screen and (min-width: 1001px) {
 	#wrapper {
@@ -200,6 +180,16 @@ footer p {
 	.works01 {
 		width: 100%;
 		margin-bottom: 70px;
+	}
+
+	.work01 img {
+		opacity: 1;
+		-webkit-transition: 1.5s ease-in-out;
+		transition: 1.5s ease-in-out;
+	}
+
+	.works01:hover img {
+		opacity: .9;
 	}
 
 
@@ -275,6 +265,29 @@ footer p {
 		font-size: 14px;
 		text-align: center;
 	}
+
+	.pageback {
+		text-align: center;
+	}
+
+	.pageback a:link,a:visited {
+		background-color: #fff;
+		border: 1px solid #333;
+		padding: 10px 50px 10px 50px;
+		-webkit-transition: 0.5s;
+		-moz-transition: 0.5s;
+		-o-transition: 0.5s;
+		-ms-transition: 0.5s;
+		transition: 0.5s;
+		color: #333;
+	}
+
+	.pageback a:hover {
+		background-color: #333;
+		color: #fff;
+	}
+
+
 
 }
 
@@ -396,6 +409,26 @@ footer p {
 		text-align: center;
 	}
 
+	.pageback {
+		text-align: center;
+	}
+
+	.pageback a:link,a:visited {
+		background-color: #fff;
+		border: 1px solid #333;
+		padding: 10px 90px 10px 90px;
+		-webkit-transition: 0.5s;
+		-moz-transition: 0.5s;
+		-o-transition: 0.5s;
+		-ms-transition: 0.5s;
+		transition: 0.5s;
+		color: #333;
+	}
+
+	.pageback a:hover {
+		background-color: #333;
+		color: #fff;
+	}
 
 }
 
@@ -502,5 +535,25 @@ footer p {
 		text-align: center;
 	}
 
+	.pageback {
+		text-align: center;
+	}
+
+	.pageback a:link,a:visited {
+		background-color: #fff;
+		border: 1px solid #333;
+		padding: 10px 90px 10px 90px;
+		-webkit-transition: 0.5s;
+		-moz-transition: 0.5s;
+		-o-transition: 0.5s;
+		-ms-transition: 0.5s;
+		transition: 0.5s;
+		color: #333;
+	}
+
+	.pageback a:hover {
+		background-color: #333;
+		color: #fff;
+	}
 
 }
