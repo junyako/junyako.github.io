@@ -273,7 +273,7 @@ footer p {
 	}
 
 	.pageback a:link,a:visited {
-		background-color: #fff;
+		background-color: #333;
 		border: 1px solid #333;
 		padding: 10px 50px 10px 50px;
 		-webkit-transition: 0.5s;
@@ -281,12 +281,12 @@ footer p {
 		-o-transition: 0.5s;
 		-ms-transition: 0.5s;
 		transition: 0.5s;
-		color: #333;
+		color: #fff;
 	}
 
 	.pageback a:hover {
-		background-color: #333;
-		color: #fff;
+		background-color: #fff;
+		color: #333;
 	}
 
 
@@ -416,7 +416,7 @@ footer p {
 	}
 
 	.pageback a:link,a:visited {
-		background-color: #fff;
+		background-color: #333;
 		border: 1px solid #333;
 		padding: 10px 90px 10px 90px;
 		-webkit-transition: 0.5s;
@@ -424,12 +424,12 @@ footer p {
 		-o-transition: 0.5s;
 		-ms-transition: 0.5s;
 		transition: 0.5s;
-		color: #333;
+		color: #fff;
 	}
 
 	.pageback a:hover {
-		background-color: #333;
-		color: #fff;
+		background-color: #fff;
+		color: #333;
 	}
 
 }
@@ -483,7 +483,7 @@ footer p {
 	}
 
 	.works01 p {
-		font-size: 9px;
+		font-size: 12px;
 		width: 100%;
 		line-height: 0.8em;
 		text-align: center;
@@ -517,13 +517,13 @@ footer p {
 	.works_main .tag  {
 		width: 100%;
 		margin-bottom: 20px;
-		font-size: 12px;
+		font-size: 13px;
 		float: left;
 	}
 
 	.works_main .outline dt {
 		width: 100%;
-		font-size: 12px;
+		font-size: 13px;
 	}
 	.works_main .outline dd {
 		width: 100%;
@@ -532,9 +532,13 @@ footer p {
 
 	#contents p {
 		margin-top: 10px;
-		font-size: 10px;
+		font-size: 13px;
 		line-height: 18px;
-		text-align: center;
+		text-align: left;
+	}
+
+	.back {
+		font-size: 14px;
 	}
 
 	.pageback {
@@ -542,20 +546,10 @@ footer p {
 	}
 
 	.pageback a:link,a:visited {
-		background-color: #fff;
+		background-color: #333;
 		border: 1px solid #333;
 		padding: 15px 100px 15px 100px;
-		-webkit-transition: 0.5s;
-		-moz-transition: 0.5s;
-		-o-transition: 0.5s;
-		-ms-transition: 0.5s;
-		transition: 0.5s;
 		color: #333;
-	}
-
-	.pageback a:hover {
-		background-color: #333;
-		color: #fff;
 	}
 
 	#information {
