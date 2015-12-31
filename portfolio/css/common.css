@@ -182,14 +182,16 @@ footer p {
 		margin-bottom: 70px;
 	}
 
-	.work01 img {
+	.work01 {
 		opacity: 1;
-		-webkit-transition: 1.5s ease-in-out;
-		transition: 1.5s ease-in-out;
+		-webkit-transition: 0.5s ease-in-out;
+		transition: 0.5s ease-in-out;
+		color: #333;
 	}
 
-	.works01:hover img {
+	.works01:hover {
 		opacity: .9;
+		color: #666;
 	}
 
 
