@@ -544,7 +544,7 @@ footer p {
 	.pageback a:link,a:visited {
 		background-color: #fff;
 		border: 1px solid #333;
-		padding: 10px 90px 10px 90px;
+		padding: 15px 100px 15px 100px;
 		-webkit-transition: 0.5s;
 		-moz-transition: 0.5s;
 		-o-transition: 0.5s;
@@ -556,6 +556,23 @@ footer p {
 	.pageback a:hover {
 		background-color: #333;
 		color: #fff;
+	}
+
+	#information {
+		float: left;
+		width: 100%;
+		margin-bottom: 10px;
+		position: relative;
+		padding-top: 20px;
+		padding-bottom: 10px;
+		border-top: 1px #333 dotted;
+		border-bottom: 1px #333 dotted;
+	}
+
+	#information .information01 {
+		float: left;
+		width: 100%;
+		margin-bottom: 8px;
 	}
 
 	#information .information01 h3 {
