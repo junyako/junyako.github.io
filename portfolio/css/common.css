@@ -16,12 +16,12 @@ img{
 	border:none;
 	vertical-align:bottom;
 }
-
 a{
 	text-decoration: none;
 	color: #000;
 	transition: color 0.3s ease 0s;
 }
+
 ul{
 	list-style-type:none;
 }
@@ -70,8 +70,6 @@ ul{
 	position: relative;
 }
 
-
-
 #video {
 	width: 100%;
 }
@@ -90,8 +88,6 @@ iframe {
 	width: 100%;
 	height: 100%;
 }
-
-/*問い合わせ先ーーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/
 
 #information {
 	float: left;
@@ -198,7 +194,8 @@ footer p {
 	}
 
 	.works01 p {
-		font-size: 10px;
+		padding-top: 5px;
+		font-size: 13px;
 		width: 100%;
 		line-height: 0.8em;
 		text-align: center;
@@ -240,12 +237,6 @@ footer p {
 		color: #999;
 	}
 
-	#contents p {
-		margin-top: 10px;
-		font-size: 14px;
-		text-align: center;
-	}
-
 	.pageback {
 		text-align: center;
 	}
@@ -274,16 +265,22 @@ footer p {
 	}
 	.works_main .outline dt {
 		width: 100%;
-		font-size: 14px;
-
+		font-size: 15px;
 		float: left;
 	}
 	.works_main .outline dd {
 		width: 100%;
 		float: left;
-		font-size: 13px;
+		font-size: 12px;
 		margin-bottom: 15px;
 		color: #333;
+	}
+
+	.workstext {
+		margin-top: 10px;
+		font-size: 14px;
+		line-height: 1.7;
+		text-align: left;
 	}
 }
 
@@ -336,9 +333,10 @@ footer p {
 	}
 
 	.works01 p {
+		padding-top: 5px;
 		font-size: 10px;
 		width: 100%;
-		line-height: 0.8em;
+		line-height: 1.2;
 		text-align: center;
 	}
 	/*worksページ----------------------------------*/
@@ -393,15 +391,8 @@ footer p {
 	}
 	.works_main .outline dd {
 		width: 100%;
-
 		font-size: 11px;
 		margin-bottom: 15px;
-	}
-
-	#contents p {
-		margin-top: 10px;
-		font-size: 12px;
-		text-align: center;
 	}
 
 	.pageback {
@@ -423,6 +414,13 @@ footer p {
 	.pageback a:hover {
 		background-color: #333;
 		color: #fff;
+	}
+
+	.workstext {
+		margin-top: 10px;
+		font-size: 13px;
+		line-height: 1.7;
+		text-align: left;
 	}
 
 }
@@ -476,7 +474,7 @@ footer p {
 	}
 
 	.works01 p {
-		font-size: 12px;
+		font-size: 13px;
 		width: 100%;
 		line-height: 0.8em;
 		text-align: center;
@@ -524,12 +522,7 @@ footer p {
 		margin-bottom: 10px;
 	}
 
-	#contents p {
-		margin-top: 10px;
-		font-size: 13px;
-		line-height: 1.7;
-		text-align: left;
-	}
+
 
 	.back {
 		font-size: 14px;
@@ -574,6 +567,13 @@ footer p {
 		font-size: 12px;
 		line-height: 1.8;
 		text-align: center;
+	}
+
+	.workstext p {
+		margin-top: 10px;
+		font-size: 13px;
+		line-height: 1.7;
+		text-align: left;
 	}
 
 }
