@@ -260,8 +260,9 @@ footer p {
 
 	.works_main .outline {
 		width: 30%;
-		float: left;
+		float: right;
 		padding-top: 10px;
+		margin-left: 10px:
 	}
 	.works_main .outline dt {
 		width: 100%;

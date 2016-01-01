@@ -1,0 +1,611 @@
+@charset "UTF-8";
+*,::before,::after {
+    box-sizing: border-box;
+}
+body {
+        font-family: "Hiragino Kaku Gothic ProN" , "游ゴシック" , "Yu Gothic" , "メイリオ", Helvetica, Arial, sans-serif;
+        color: #333;
+        line-height: 1.5;
+}
+a:link {
+    color:#0099CC;
+}
+a:visited {
+    color:#0099cc;
+}
+
+a:hover {
+    color:#FF9900;
+}
+
+a:active {
+    color:#FF9900;
+}
+
+#wrapper {
+    width: 960px;
+    margin: 24px auto 0px;
+}
+
+
+header {
+    width: 260px;
+    margin: auto;
+}
+
+
+
+nav ul {
+    width: 860px;
+    overflow: hidden;
+    margin: 10px auto;
+}
+
+nav ul li {
+    float: left;
+    margin-right: 40px;
+}
+
+nav ul li :last-child {
+    margin-right: 0px;
+}
+
+nav li a:link,nav li a:visited {
+    color: #333;
+    text-decoration: none;
+    font-family: "ヒラギノ明朝 ProN W3", "HiraMinProN-W3", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+    font-size: 14px;
+    display: block;
+    text-align: center;
+    position:relative;
+    line-height: 2.7;
+}
+
+nav li a:hover {
+    color: #999;
+}
+
+#mainvisual {
+    width: 960px;
+}
+
+#contents1 {
+    width: 960px;
+    overflow: hidden;
+}
+
+#reservation {
+    width: 360px;
+    float: left;
+}
+#reservation .title {
+    width: 360px;
+    overflow: hidden;
+    margin-top: 30px;
+    border-bottom: 1px dotted #333;
+}
+
+#reservation h2 {
+    font-family: "ヒラギノ明朝 ProN W3", "HiraMinProN-W3", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+    font-size: 22px;
+    display: inline;
+}
+
+#reservation h3 {
+    font-size: 12px;
+    font-family: "ヒラギノ明朝 ProN W3", "HiraMinProN-W3", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+    float: right;
+    position: relative;
+    padding-right: 66px;
+    padding-top: 9px;
+}
+
+#reservationcontents {
+    width: 360px;
+    height: 248px;
+    border: 1px dotted #333;
+    border-radius: 10px;
+    margin-top: 16px;
+    padding-top: 8px;
+    padding-left: 5px;
+}
+
+#reservationcontents p {
+    font-size: 11px;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+#selectname {
+    width: 280px;
+    overflow: hidden;
+}
+#selectname p {
+    float: left;
+    margin-left: 40px;
+    margin-right: 32px;
+}
+
+#selectname .lastp {
+    margin-right: 0px;
+}
+
+.select-box01 select {
+    width: 80px;
+    padding-left: 10px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+    border: 1px solid #999;
+    background: url(../image/arrowunder.png) 62px center no-repeat;
+}
+
+#select1 {
+    width: 280px;
+    overflow: hidden;
+    margin-left: 40px;
+}
+
+#select2 {
+    width: 280px;
+    overflow: hidden;
+    margin-left: 40px;
+}
+
+.box01 {
+    float: left;
+    margin-right: 13px;
+}
+.box2 {
+    float: left;
+    margin-right: 13px;
+}
+
+
+#checkbox {
+    margin-top: 10px;
+    margin-left: 36px;
+}
+
+#checkbox label {
+    font-size: 11px;
+}
+
+#submitbutton {
+    border: none;
+    width: 265px;
+    height: 40px;
+    background-color: #333;
+    color: #fff;
+    margin-left: 40px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+#cancel {
+    width: 265px;
+    margin-left: 40px;
+}
+
+#cancel p {
+    text-align: right;
+}
+
+
+
+
+
+#news {
+    width: 540px;
+    float: right;
+}
+
+#news .title {
+    width: 540px;
+    overflow: hidden;
+    margin-top: 30px;
+    border-bottom: 1px dotted #333;
+}
+
+#news h2 {
+    font-family: "ヒラギノ明朝 ProN W3", "HiraMinProN-W3", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+    font-size: 22px;
+    display: inline;
+}
+
+#news h3 {
+    font-size: 12px;
+    font-family: "ヒラギノ明朝 ProN W3", "HiraMinProN-W3", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+    float: right;
+    position: relative;
+    padding-right: 400px;
+    padding-top: 9px;
+}
+
+.news-list {
+    margin-top: 16px;
+    max-height: 248px;
+    overflow-y: auto;
+    font-size: 12px;
+    list-style-type: none;
+    position: relative;
+}
+
+.news-list a:link,a:visited {
+    text-decoration: none;
+    color: #333;
+}
+.news-list a:hover {
+    color: #999;
+}
+
+.news-list .date {
+    color: #333;
+}
+.news-list .category {
+    color: #333;
+    margin-left: 10px;
+    text-align: center;
+    display: inline-block;
+    width: 57px;
+    border-radius: 5px;
+    background-color: #d03c56;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 10px;
+}
+.news-list .event {
+    background-color: #2c3c53;
+}
+
+.news-list .titlename {
+    display: inline-block;
+    padding-left: 15px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.news-item {
+    margin-bottom: 9px;
+}
+
+.contents {
+    margin-top: 40px;
+}
+
+.contents a:link,a:visited {
+    text-decoration: none;
+    color: #333;
+}
+
+.contents a:hover {
+    color: #999;
+}
+
+#mainbox1 {
+    width: 960px;
+    overflow: hidden;
+}
+
+#mainbox2 {
+    width: 960px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.box {
+    width: 300px;
+    float: left;
+    margin-right: 30px;
+}
+
+.three,.six {
+    margin-right: 0px;
+}
+.box .title {
+    border-bottom: 1px dotted #333;
+    margin-bottom: 10px;
+}
+
+.box h2 {
+    font-family: "ヒラギノ明朝 ProN W3", "HiraMinProN-W3", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+    font-size: 22px;
+    display: inline;
+}
+
+.box h3 {
+    font-size: 12px;
+    font-family: "ヒラギノ明朝 ProN W3", "HiraMinProN-W3", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+    float: right;
+    position: relative;
+    padding-top: 6px;
+}
+
+.box p {
+    font-size: 11px;
+    margin-bottom: 10px;
+}
+
+.one h3{
+    padding-right: 200px;
+}
+
+
+.two h3 {
+    padding-right: 70px;
+}
+
+
+.three h3 {
+    padding-right: 160px;
+}
+
+.four h3 {
+    padding-right: 70px;
+}
+
+.five h3 {
+    padding-right: 10px;
+}
+
+.six h3 {
+    padding-right: 100px;
+}
+
+
+/* room.html--start------------------------------------------------*/
+#pankuzu ul li a{
+    color: #333;
+    font-size: 11px;
+    display: inline;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+#pankuzu ul li a:before {
+    content: " > ";
+}
+
+#pankuzu ul li a:first-child:before {
+    content: "";
+}
+
+#roomcontents {
+    width: 960px;
+    overflow: hidden;
+}
+
+#roomcontents p {
+    font-size: 12px;
+}
+
+#maincontents {
+    width: 668px;
+    float: left;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+#roomheader {
+    margin-top: 30px;
+    border-bottom: 1px dotted #333;
+    margin-bottom: 10px;
+}
+
+#roomheader h2 {
+    font-size: 22px;
+    font-family: "ヒラギノ明朝 ProN W3", "HiraMinProN-W3", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+}
+
+#roomheader span {
+    font-size: 18px;
+    font-family: "Hiragino Kaku Gothic ProN" , "游ゴシック" , "Yu Gothic" , "メイリオ", Helvetica, Arial, sans-serif;
+    padding-left: 20px;
+
+}
+
+.introduce {
+    margin-bottom: 30px;
+}
+
+.room {
+    width: 310px;
+    float: left;
+    margin-right: 48px;
+    margin-bottom: 30px;
+}
+
+.room h2 {
+    font-size: 22px;
+    font-family: "ヒラギノ明朝 ProN W3", "HiraMinProN-W3", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+}
+
+.room h3 {
+    margin-top: -4px;
+    font-size: 11px;
+    font-family: "Hiragino Kaku Gothic ProN" , "游ゴシック" , "Yu Gothic" , "メイリオ", Helvetica, Arial, sans-serif;
+}
+
+.room p {
+    margin-top: 5px;
+    font-size: 11px;
+    font-family: "Hiragino Kaku Gothic ProN" , "游ゴシック" , "Yu Gothic" , "メイリオ", Helvetica, Arial, sans-serif;
+}
+
+.room a:link,a:visited {
+    text-decoration: none;
+    color: #333;
+}
+
+.room a:hover {
+    color: #999;
+}
+
+.right {
+    margin-right: 0px;
+}
+
+
+
+
+#menulist {
+    float: right;
+    margin-top: 30px;
+}
+
+
+#menulist ul {
+    list-style: none;
+}
+
+#menulist li {
+    display: inline;
+}
+
+#menulist li a {
+    display: block;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+    width: 242px;
+    height: 38px;
+    margin: 2px 0px;
+    text-align: left;
+    font-size: 14px;
+}
+
+#menulist li a:hover {
+    background-color: #333;
+    color: #f7f7f7;
+}
+
+
+
+
+/* room.html--end------------------------------------------------*/
+
+
+
+
+.pickup {
+    margin-bottom: 60px;
+}
+.pickup .title {
+    width: 960px;
+    overflow: hidden;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border-bottom: 1px dotted #333;
+}
+
+.pickup h2 {
+    font-family: "ヒラギノ明朝 ProN W3", "HiraMinProN-W3", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+    font-size: 22px;
+    display: inline;
+}
+
+.pickup h3 {
+    font-size: 12px;
+    font-family: "ヒラギノ明朝 ProN W3", "HiraMinProN-W3", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+    float: right;
+    position: relative;
+    padding-right: 830px;
+    padding-top: 9px;
+}
+
+.pickup p {
+    font-size: 12px;
+
+}
+
+.pickup a:link,a:visited {
+    color: #333;
+    text-decoration: none;
+}
+
+.pickup a:hover {
+    color: #999;
+}
+#pickupcontents {
+    width: 960px;
+    overflow: hidden;
+}
+
+#pick1 {
+    float: left;
+}
+
+#pick2 {
+    float: right;
+}
+
+#topback p {
+    font-size: 11px;
+    text-align: right;
+    background: url(../image/arrow.png) no-repeat;
+    background-position: 890px center;
+}
+
+footer {
+    margin-top: 20px;
+    width: 960px;
+    background-color: #efebd3;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+
+footer li p {
+    font-family: "ヒラギノ明朝 ProN W3", "HiraMinProN-W3", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+    margin-bottom: 5px;
+}
+
+footer li p a img {
+    padding-right: 8px
+}
+
+
+footer a:link,footer a:visited {
+    text-decoration: none;
+    color: #333;
+}
+
+footer a:hover {
+    color: #999;
+}
+
+footer ul li a {
+    font-size: 11px;
+    display:block;
+    border-left: 1px dotted #333;
+    padding-left: 12px;
+    margin-left: 5px;
+}
+
+.footer_home {
+    padding-top: 20px;
+    margin-left: 32px;
+    margin-bottom: 10px;
+}
+
+footer .copyright {
+    text-align: center;
+    font-size: 10px;
+}
+
+#footercontents {
+    margin-left: 32px;
+    width: 890px;
+    overflow: hidden;
+}
+
+#footercontents li {
+    float: left;
+    margin-bottom: 20px;
+}
+
+#footercontents li p {
+    margin-right: 40px;
+}
