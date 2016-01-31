@@ -4,7 +4,7 @@ $(function (){
         $.ajax({
             url:'omikuji.html',
             type:'GET',
-            dataType:'html',
+            dataType:'html'
         }).done(function(data){
             console.log(data);
         }).fail(function(){
