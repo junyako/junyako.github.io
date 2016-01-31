@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+
+#ball {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: #FF0000;s
+}
