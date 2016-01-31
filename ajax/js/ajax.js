@@ -14,4 +14,8 @@ $(function (){
 
     });
 
+    function showContents(data) {
+        $('#container').append(data);
+    }
+
 });
