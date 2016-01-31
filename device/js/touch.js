@@ -5,7 +5,7 @@ $(function (){
     var lat;
 
     //GPS
-    navigater.geolocation.getCurrentPosition(function(evt){
+    navigator.geolocation.getCurrentPosition(function(evt){
         //緯度
         lon = evt.coords.longitude;
 
