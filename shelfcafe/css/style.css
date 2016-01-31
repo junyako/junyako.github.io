@@ -18,6 +18,7 @@ a:hover{
 #wrapper{
 	width:100%;
 	margin: 20px 0;
+	background-color: #ff0000;
 }
 
 @media screen and (min-width:768px) {
@@ -25,6 +26,7 @@ a:hover{
 	#wrapper{
 		width:950px;
 		margin: 40px auto 0;
+		background-color: #0000ff;
 	}
 
 }
