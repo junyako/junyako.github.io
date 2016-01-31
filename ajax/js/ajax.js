@@ -6,7 +6,6 @@ $(function(){
             type:'GET',
             dataType:'json'
         }).done(function(){
-
             showContent(data);
 
         }).fail(function(){
@@ -18,7 +17,7 @@ $(function(){
     function showContent(data) {
         //$('#container').append(data);
 
-        for(var cnt = 0; cnt < data.length; cnt++) {
+        for(var cnt =0; cnt < data.length; cnt++){
             $('#container li').eq(cnt)
 .text(data[cnt].name);        }
     }
