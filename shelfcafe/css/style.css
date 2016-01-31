@@ -16,9 +16,22 @@ a:hover{
 }
 
 #wrapper{
-	width:950px;
-	margin: 40px auto 0;
+	width:100%;
+	margin: 20px 0;
 }
+
+@media screen and (min-width:768px) {
+
+	#wrapper{
+		width:950px;
+		margin: 40px auto 0;
+	}
+
+}
+
+
+
+
 
 /* header ------------------------*/
 header{
