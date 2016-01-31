@@ -29,31 +29,43 @@ a:hover{
 
 }
 
+header {
+	width: 100%;
 
-
-
-
-/* header ------------------------*/
-header{
-	width:950px;
-	height:80px;
-	position:relative;
-}
-header h1{
-	width:221px;
-	height:28px;
-	position:absolute;
-	left:0;
-	top:0;
-}
-header p{
-	width:350px;
-	height:28px;
-	position:absolute;
-	left:240px;
-	top:0;
 }
 
+header h1 {
+	width: 221px;
+
+}
+
+header p {
+	width: 100%;
+}
+
+
+@media screen and (min-width:768px) {
+	/* header ------------------------*/
+	header{
+		width:950px;
+		height:80px;
+		position:relative;
+	}
+	header h1{
+		width:221px;
+		height:28px;
+		position:absolute;
+		left:0;
+		top:0;
+	}
+	header p{
+		width:350px;
+		height:28px;
+		position:absolute;
+		left:240px;
+		top:0;
+	}
+}
 
 /* nav -------------------------*/
 nav ul li{
