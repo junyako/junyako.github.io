@@ -7,6 +7,7 @@ $(function (){
             dataType:'html'
         }).done(function(data){
             console.log(data);
+            showContent(data);
         }).fail(function(){
             console.log("えらー");
         });
