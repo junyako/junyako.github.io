@@ -4,7 +4,7 @@ $(function (){
     function shakeDevice(evt){
         var x = evt.acceleration.x;
         var y = evt.acceleration.y;
-        var Z = evt.acceleration.z;
+        var z = evt.acceleration.z;
 
         $('#device li').eq(0).text('加速度' +  x);
         $('#device li').eq(1).text('加速度' +  y);
