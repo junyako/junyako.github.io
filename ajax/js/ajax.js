@@ -5,8 +5,8 @@ $(function(){
             url:'mydata.json',
             type:'GET',
             dataType:'json'
-        }).done(function(data){
-            console.log(data);
+        }).done(function(){
+
             showContent(data);
 
         }).fail(function(){
