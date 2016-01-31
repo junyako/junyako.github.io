@@ -2,7 +2,7 @@ $(function(){
     $('#btn').on('click',function(){
         //ajaxでよみこみ
         $.ajax({
-            url:'mydata.json',
+            url:'/Users/kobayashijunya/Documents/workspace/junyako.github.io/ajax/mydata.json',
             type:'GET',
             dataType:'json'
         }).done(function(){
